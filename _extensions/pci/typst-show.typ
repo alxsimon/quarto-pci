@@ -4,17 +4,6 @@
 $if(title)$
   title: [$title$],
 $endif$
-$if(author)$
-  authors: (
-    $for(author)$
-      (
-        name: "$it$",
-           
-      ),
-    $endfor$
-  ),
-$endif$
-
 $if(by-author)$
 authors: (
   $for(by-author)$
@@ -29,7 +18,7 @@ $endif$
 $if(by-affiliation)$
   affiliations: (
     $for(by-affiliation)$
-      (id: "$it.ref$", name: "$it.name$")$sep$
+      (id: "$it.id$", name: "$it.name$")$sep$
     $endfor$
   ),
 $endif$
