@@ -1,11 +1,33 @@
 ---
 title: A quarto PCI template using the Typst backend
-date: "2024-01-01"
 author:
-  - "Camille Noûs"
-  - "Second Author"
-  - "Last Author"
-volume: "Vol. XX (2024), article eXX"
+  - name: Antoine Lavoisier
+    orcid: 0000-0000-0000-0001
+    affiliations:
+      - ref: \#
+        ref: 1
+  - name: Mary P. Curry
+    orcid: 0000-0000-0000-0001
+    affiliations:
+      - ref: \#
+        ref: 2
+  - name: Peter Curry
+    affiliations:
+      - ref: 2
+  - name: Mary P. Curry
+    orcid: 0000-0000-0000-0001
+    affiliations:
+      - ref: 1
+        ref: 3
+affiliations:
+  - ref: 1
+    name: "Rue sans aplomb, Paris, France"
+  - ref: 2
+    name: "Center for spiced radium experiments, United Kingdom"
+  - ref: 3
+    name: "Bruce's Bar and Grill, London (near Susan's)"
+  - ref: \#
+    name: "Equal contributions"
 doi: "https://doi.org/10.24072/pci.xxx"
 format:
   pci-typst: default
@@ -17,7 +39,14 @@ abstract: |
   allowing researchers to compose papers faster. In a series of experiments we
   demonstrate that Typst offers several advantages, including faster document
   creation, simplified syntax, and increased ease-of-use.
+keywords:
+  - First
+  - Second
+  - PCI
+correspondence: first-author@email.me
 bibliography: sample.bib
+numbered_section: false
+pcj: false
 ---
 
 # Introduction
@@ -35,6 +64,4 @@ It is perhaps surprising that this notable and general connection between K and 
 You can learn more about creating custom Typst templates here: 
 
 <https://quarto.org/docs/prerelease/1.4/typst.html#custom-formats>
-
-
 
