@@ -4,12 +4,12 @@ author:
   - name: Antoine Lavoisier
     orcid: 0000-0000-0000-0001
     affiliations:
-      - ref: "#"
+      - ref: '#'
       - ref: 1
   - name: Mary P. Curry
     orcid: 0000-0000-0000-0001
     affiliations:
-      - ref: "#"
+      - ref: '#'
       - ref: 2
   - name: Peter Curry
     affiliations:
@@ -26,9 +26,9 @@ affiliations:
     name: "Center for spiced radium experiments, United Kingdom"
   - id: 3
     name: "Bruce's Bar and Grill, London (near Susan's)"
-  - id: "#"
+  - id: '#'
     name: "Equal contributions"
-doi: "https://doi.org/10.24072/pci.xxx"
+doi: 'https://doi.org/10.24072/pci.xxx'
 format:
   pci-typst: default
 abstract: |
@@ -43,7 +43,7 @@ keywords:
   - First
   - Second
   - PCI
-correspondence: first-author@email.me
+correspondence: 'first-author@email.me'
 bibliography: sample.bib
 numbered_section: false
 pcj: false

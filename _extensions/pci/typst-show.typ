@@ -9,16 +9,20 @@ authors: (
   $for(by-author)$
   (
     name: "$it.name.literal$",
+    $if(it.orcid)$
     orcid: "$it.orcid$",
-    affiliations: "$for(it.affiliations/first)$it.id,$endfor$",
-  )$sep$,
+    $endif$
+    $if(it.affiliations)$
+    affiliations: [$for(it.affiliations)$$it.id$$sep$,$endfor$],
+    $endif$
+  ),
   $endfor$
 ),
 $endif$
 $if(by-affiliation)$
   affiliations: (
     $for(by-affiliation)$
-      (id: "$it.id$", name: "$it.name$")$sep$
+      (id: [$it.id$], name: "$it.name$"),
     $endfor$
   ),
 $endif$
@@ -26,7 +30,7 @@ $if(abstract)$
   abstract: [$abstract$],
 $endif$
 $if(doi)$
-  doi: "$doi$"
+  doi: "$doi$",
 $endif$
 $if(keywords)$
   keywords: (
